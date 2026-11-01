@@ -41,7 +41,7 @@ button, input, textarea {
   gap: 12px;
 }
 
-..logo-image {
+.logo-image {
   width: 48px;
   height: 48px;
   object-fit: contain;

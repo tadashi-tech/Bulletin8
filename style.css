@@ -41,14 +41,12 @@ button, input, textarea {
   gap: 12px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--text);
-  text-decoration: none;
-  font: 700 17px 'Space Grotesk', sans-serif;
-  letter-spacing: 2px;
+..logo-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
 .logo-icon {

@@ -1,280 +1,337 @@
-<!DOCTYPE html>  <html lang="fr">  
-<head>  
-  <meta charset="UTF-8">  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <meta name="theme-color" content="#0b1020">  
-  <title>EXPLORIUM | Inscription</title>  
-  <link rel="stylesheet" href="style.css">  
-</head>  
-<body>    <header class="header">
-  <div class="logo">
 
-    <div class="logo-image-container">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="EXPLORIUM - Un club dédié aux sciences, à la programmation, à la robotique, à la Data Science et à la cybersécurité.">
+
+    <title>EXPLORIUM | Explore, Learn, Create</title>
+
+    <!-- Police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Feuille de style commune -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><div class="logo-image-container">
       <img
         src="logo_explorium.png"
         alt="Logo EXPLORIUM"
         class="logo-image"
       >
-    </div>
+    </div></span>
+                <span>EXPLORIUM</span>
+            </a>
 
-    <div class="logo-text">
-      <strong>EXPLORIUM</strong>
-      <small>EXPLORE · LEARN · CREATE</small>
-    </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Accueil</a>
+                <a href="regles.html">Notre club</a>
+                <a href="matieres.html">Nos matières</a>
+                <a href="inscription.html" class="nav-register">
+                    Inscription
+                </a>
+            </nav>
 
-  </div>
+        </div>
 
-  <span class="header-label">INSCRIPTION</span>
-</header>    <main class="container">  <section class="intro">  
-  <p class="eyebrow">✦ LES CURIEUX FONT L'AVENIR</p>  
-  <h1>Le futur commence<br>par <span>une question.</span></h1>  
-  <p class="intro-text">  
-    Rejoins EXPLORIUM, explore les sciences  
-    et transforme tes idées en projets.  
-  </p>  
+    </header>
 
-  <div class="tags">  
-    <span>Mathématiques</span>  
-    <span>Sciences</span>  
-    <span>Technologie</span>  
-  </div>  
-</section>  
 
-<section class="form-card">  
+    <!-- ================= HERO ================= -->
 
-  <div class="form-heading">  
-    <div>  
-      <p class="section-label">BIENVENUE CHEZ EXPLORIUM</p>  
-      <h2>Formulaire d'inscription</h2>  
-      <p class="subtitle">  
-        Complète les informations ci-dessous.  
-      </p>  
-    </div>  
-    <div class="step">  
-      <strong>01</strong>  
-      <small>INSCRIPTION</small>  
-    </div>  
-  </div>  
+    <main>
 
-  <div class="notice">  
-    <span>i</span>  
-    <p>  
-      Les champs marqués d'une <b>*</b> sont obligatoires.  
-      Cette version ne sauvegarde pas encore tes données.  
-    </p>  
-  </div>  
+        <section class="hero">
 
-  <form id="registrationForm">  
+            <div class="hero-content">
 
-    <fieldset>  
-      <legend><span>01</span> Informations personnelles</legend>  
+                <span class="hero-tag">
+                    <span class="status-dot"></span>
+                    LE SAVOIR EST UNE AVENTURE
+                </span>
 
-      <div class="field">  
-        <label for="fullname">Nom et prénom <b>*</b></label>  
-        <input  
-          type="text"  
-          id="fullname"  
-          name="fullname"  
-          placeholder="Ex. : Rakoto Jean"  
-          autocomplete="name"  
-          maxlength="100"  
-          required  
-        >  
-      </div>  
+                <h1>
+                    Explore the Unknown.
+                    <span>Create the Future.</span>
+                </h1>
 
-      <div class="field-grid">  
-        <div class="field">  
-          <label for="age">Âge <b>*</b></label>  
-          <input  
-            type="number"  
-            id="age"  
-            name="age"  
-            min="10"  
-            max="100"  
-            placeholder="Ex. : 17"  
-            required  
-          >  
-        </div>  
+                <p class="hero-description">
+                    Bienvenue dans EXPLORIUM, un espace où la curiosité
+                    devient connaissance, où les idées deviennent projets
+                    et où chaque découverte ouvre de nouvelles possibilités.
+                </p>
 
-        <div class="field">  
-          <label for="class">Classe <b>*</b></label>  
-          <input  
-            type="text"  
-            id="class"  
-            name="class"  
-            placeholder="Ex. : Terminale C"  
-            maxlength="60"  
-            required  
-          >  
-        </div>  
-      </div>  
-    </fieldset>  
+                <div class="hero-actions">
 
-    <fieldset>  
-      <legend><span>02</span> Matières choisies</legend>  
+                    <a href="matieres.html" class="btn btn-primary">
+                        Découvrir nos matières
+                        <span>↗</span>
+                    </a>
 
-      <p class="help">  
-        Choisis un ou plusieurs domaines.  
-      </p>  
+                    <a href="regles.html" class="btn btn-secondary">
+                        À propos du club
+                    </a>
 
-      <div class="subjects">  
+                </div>
 
-        <label class="subject">  
-          <input type="checkbox" name="subjects"  
-            value="Maths/PC">  
-          <span class="subject-icon">∑</span>  
-          <span class="subject-text">  
-            <strong>Maths / PC</strong>  
-            <small>Sciences fondamentales</small>  
-          </span>  
-          <span class="check">✓</span>  
-        </label>  
+                <div class="hero-bottom">
+                    <span>SCIENCE</span>
+                    <span>TECHNOLOGIE</span>
+                    <span>INNOVATION</span>
+                </div>
 
-        <label class="subject">  
-          <input type="checkbox" name="subjects"  
-            value="Robotique & IA">  
-          <span class="subject-icon">⌘</span>  
-          <span class="subject-text">  
-            <strong>Robotique &amp; IA</strong>  
-            <small>Robots et intelligence artificielle</small>  
-          </span>  
-          <span class="check">✓</span>  
-        </label>  
+            </div>
 
-        <label class="subject">  
-          <input type="checkbox" name="subjects"  
-            value="Data science & IA">  
-          <span class="subject-icon">▥</span>  
-          <span class="subject-text">  
-            <strong>Data science &amp; IA</strong>  
-            <small>Données et intelligence artificielle</small>  
-          </span>  
-          <span class="check">✓</span>  
-        </label>  
+            <div class="hero-visual">
 
-        <label class="subject">  
-          <input type="checkbox" name="subjects"  
-            value="Programmation">  
-          <span class="subject-icon">{ }</span>  
-          <span class="subject-text">  
-            <strong>Programmation</strong>  
-            <small>Créer avec le code</small>  
-          </span>  
-          <span class="check">✓</span>  
-        </label>  
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="orbit orbit-three"></div>
 
-        <label class="subject">
-  <input
-    type="checkbox"
-    name="subjects"
-    value="Cybersécurité"
-  >
-  <span class="subject-icon">⌑</span>
-  <span class="subject-text">
-    <strong>Cybersécurité</strong>
-    <small>Sécurité informatique et protection des données</small>
-  </span>
-  <span class="check">✓</span>
-        </label>
+                <div class="hero-symbol">
+                    <span>EX</span>
+                    <small>EXPLORIUM</small>
+                </div>
 
-      </div>  
+                <div class="floating-card floating-card-one">
+                    <span class="floating-icon">∑</span>
+                    <span>SCIENCE</span>
+                </div>
 
-      <p id="subjectsError" class="error" aria-live="polite"></p>  
-    </fieldset>  
+                <div class="floating-card floating-card-two">
+                    <span class="floating-icon">⌘</span>
+                    <span>TECH</span>
+                </div>
 
-    <fieldset>  
-      <legend><span>03</span> Coordonnées</legend>  
+                <div class="floating-card floating-card-three">
+                    <span class="floating-icon">✧</span>
+                    <span>INNOVATION</span>
+                </div>
 
-      <div class="field">  
-        <label for="email">Adresse e-mail <b>*</b></label>  
-        <input  
-          type="email"  
-          id="email"  
-          name="email"  
-          placeholder="toi@exemple.com"  
-          autocomplete="email"  
-          required  
-        >  
-      </div>  
+            </div>
 
-      <div class="field">  
-        <label for="phone">Contact téléphonique <b>*</b></label>  
-        <input  
-          type="tel"  
-          id="phone"  
-          name="phone"  
-          placeholder="Ex. : +261 34 00 000 00"  
-          autocomplete="tel"  
-          maxlength="30"  
-          required  
-        >  
-        <small class="hint">  
-          N'oublie pas l'indicatif du pays.  
-        </small>  
-      </div>  
-    </fieldset>  
+        </section>
 
-    <fieldset>  
-      <legend><span>04</span> Remarque</legend>  
 
-      <div class="field">  
-        <label for="remark">  
-          Un mot pour nous ?  
-          <span class="optional">(facultatif)</span>  
-        </label>  
+        <!-- ================= PRESENTATION ================= -->
 
-        <textarea  
-          id="remark"  
-          name="remark"  
-          rows="4"  
-          maxlength="500"  
-          placeholder="Tes motivations, tes idées ou tes questions..."  
-        ></textarea>  
+        <section class="intro-section container">
 
-        <div class="counter">  
-          <span>Partage ce que tu souhaites.</span>  
-          <span id="charCount">0 / 500</span>  
-        </div>  
-      </div>  
-    </fieldset>  
+            <div class="section-heading">
 
-    <label class="consent">  
-      <input type="checkbox" id="consent" required>  
-      <span>  
-        Je confirme que les informations fournies sont exactes  
-        et j'accepte leur utilisation pour traiter ma demande  
-        d'inscription. <b>*</b>  
-      </span>  
-    </label>  
+                <span class="section-label">01 / NOTRE UNIVERS</span>
 
-    <button type="submit" class="submit-btn">  
-      <span>Envoyer ma préinscription</span>  
-      <span class="arrow">→</span>  
-    </button>  
+                <h2>
+                    La curiosité est le début
+                    <span>de toute découverte.</span>
+                </h2>
 
-    <p class="privacy">  
-      ◇ Tes informations doivent rester confidentielles.  
-    </p>  
+                <p>
+                    EXPLORIUM rassemble les passionnés de sciences et
+                    de technologies autour d'une même ambition :
+                    apprendre, expérimenter et construire.
+                </p>
 
-  </form>  
+            </div>
 
-  <div id="successMessage" class="success" hidden>  
-    <div class="success-icon">✓</div>  
-    <h2>Inscription réussie !</h2>
+        </section>
 
-<p>  
-  Ta préinscription a été enregistrée avec succès.  
-  Bienvenue chez EXPLORIUM !  
-</p>  
-        <button type="button" id="editButton" class="edit-btn">  
-          Revenir au formulaire  
-        </button>  
-      </div>  </section>  
 
-<footer>  
-  <span>© <span id="year"></span> EXPLORIUM</span>  
-  <span>La curiosité ouvre des possibilités.</span>  
-</footer>
+        <!-- ================= MENU PRINCIPAL ================= -->
 
-  </main>    <script type="module" src="script.js"></script>  </body>  
-</html>  
+        <section class="main-menu container">
+
+            <div class="menu-heading">
+                <div>
+                    <span class="section-label">02 / EXPLORE EXPLORIUM</span>
+                    <h2>Que souhaites-tu découvrir ?</h2>
+                </div>
+
+                <p>
+                    Découvre notre univers avant de devenir membre.
+                </p>
+            </div>
+
+
+            <div class="menu-grid">
+
+
+                <!-- CARTE 1 -->
+
+                <a href="regles.html" class="menu-card">
+
+                    <div class="card-top">
+                        <span class="card-number">01</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
+
+                    <div class="card-icon">⌖</div>
+
+                    <h3>Règles & ambitions</h3>
+
+                    <p>
+                        Découvre notre vision, nos objectifs,
+                        nos valeurs, nos règles et les activités
+                        qui font vivre le club.
+                    </p>
+
+                    <span class="card-link">
+                        Explorer le club →
+                    </span>
+
+                </a>
+
+
+                <!-- CARTE 2 -->
+
+                <a href="matieres.html" class="menu-card featured-card">
+
+                    <div class="card-top">
+                        <span class="card-number">02</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
+
+                    <div class="card-icon">✧</div>
+
+                    <h3>Nos cinq matières</h3>
+
+                    <p>
+                        Mathématiques, programmation, robotique,
+                        intelligence artificielle et cybersécurité :
+                        trouve ton domaine.
+                    </p>
+
+                    <span class="card-link">
+                        Découvrir les matières →
+                    </span>
+
+                </a>
+
+
+                <!-- CARTE 3 -->
+
+                <a href="inscription.html" class="menu-card">
+
+                    <div class="card-top">
+                        <span class="card-number">03</span>
+                        <span class="card-arrow">↗</span>
+                    </div>
+
+                    <div class="card-icon">✚</div>
+
+                    <h3>Rejoindre le club</h3>
+
+                    <p>
+                        Tu souhaites participer à cette aventure ?
+                        Découvre les modalités et remplis
+                        ton formulaire d'inscription.
+                    </p>
+
+                    <span class="card-link">
+                        Devenir membre →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PHILOSOPHIE ================= -->
+
+        <section class="philosophy-section">
+
+            <div class="container philosophy-content">
+
+                <span class="section-label">
+                    03 / OUR PHILOSOPHY
+                </span>
+
+                <h2>
+                    Think beyond.
+                    <span>Learn without limits.</span>
+                </h2>
+
+                <p>
+                    Nous croyons que chaque grande innovation commence
+                    par une question, chaque compétence par un
+                    apprentissage et chaque réussite par une volonté
+                    d'aller plus loin.
+                </p>
+
+                <a href="regles.html" class="text-link">
+                    En savoir plus sur notre vision →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">E✦</span>
+                    <span>EXPLORIUM</span>
+                </a>
+
+                <p>
+                    Explore. Learn. Create.
+                    <br>
+                    La connaissance sans frontières.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Accueil</a>
+                <a href="regles.html">Le club</a>
+                <a href="matieres.html">Les matières</a>
+                <a href="inscription.html">Inscription</a>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 EXPLORIUM. Tous droits réservés.
+            </p>
+
+            <span>Built for curious minds.</span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

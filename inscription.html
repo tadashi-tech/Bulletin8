@@ -1,0 +1,280 @@
+<!DOCTYPE html>  <html lang="fr">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="theme-color" content="#0b1020">  
+  <title>EXPLORIUM | Inscription</title>  
+  <link rel="stylesheet" href="style.css">  
+</head>  
+<body>    <header class="header">
+  <div class="logo">
+
+    <div class="logo-image-container">
+      <img
+        src="logo_explorium.png"
+        alt="Logo EXPLORIUM"
+        class="logo-image"
+      >
+    </div>
+
+    <div class="logo-text">
+      <strong>EXPLORIUM</strong>
+      <small>EXPLORE · LEARN · CREATE</small>
+    </div>
+
+  </div>
+
+  <span class="header-label">INSCRIPTION</span>
+</header>    <main class="container">  <section class="intro">  
+  <p class="eyebrow">✦ LES CURIEUX FONT L'AVENIR</p>  
+  <h1>Le futur commence<br>par <span>une question.</span></h1>  
+  <p class="intro-text">  
+    Rejoins EXPLORIUM, explore les sciences  
+    et transforme tes idées en projets.  
+  </p>  
+
+  <div class="tags">  
+    <span>Mathématiques</span>  
+    <span>Sciences</span>  
+    <span>Technologie</span>  
+  </div>  
+</section>  
+
+<section class="form-card">  
+
+  <div class="form-heading">  
+    <div>  
+      <p class="section-label">BIENVENUE CHEZ EXPLORIUM</p>  
+      <h2>Formulaire d'inscription</h2>  
+      <p class="subtitle">  
+        Complète les informations ci-dessous.  
+      </p>  
+    </div>  
+    <div class="step">  
+      <strong>01</strong>  
+      <small>INSCRIPTION</small>  
+    </div>  
+  </div>  
+
+  <div class="notice">  
+    <span>i</span>  
+    <p>  
+      Les champs marqués d'une <b>*</b> sont obligatoires.  
+      Cette version ne sauvegarde pas encore tes données.  
+    </p>  
+  </div>  
+
+  <form id="registrationForm">  
+
+    <fieldset>  
+      <legend><span>01</span> Informations personnelles</legend>  
+
+      <div class="field">  
+        <label for="fullname">Nom et prénom <b>*</b></label>  
+        <input  
+          type="text"  
+          id="fullname"  
+          name="fullname"  
+          placeholder="Ex. : Rakoto Jean"  
+          autocomplete="name"  
+          maxlength="100"  
+          required  
+        >  
+      </div>  
+
+      <div class="field-grid">  
+        <div class="field">  
+          <label for="age">Âge <b>*</b></label>  
+          <input  
+            type="number"  
+            id="age"  
+            name="age"  
+            min="10"  
+            max="100"  
+            placeholder="Ex. : 17"  
+            required  
+          >  
+        </div>  
+
+        <div class="field">  
+          <label for="class">Classe <b>*</b></label>  
+          <input  
+            type="text"  
+            id="class"  
+            name="class"  
+            placeholder="Ex. : Terminale C"  
+            maxlength="60"  
+            required  
+          >  
+        </div>  
+      </div>  
+    </fieldset>  
+
+    <fieldset>  
+      <legend><span>02</span> Matières choisies</legend>  
+
+      <p class="help">  
+        Choisis un ou plusieurs domaines.  
+      </p>  
+
+      <div class="subjects">  
+
+        <label class="subject">  
+          <input type="checkbox" name="subjects"  
+            value="Maths/PC">  
+          <span class="subject-icon">∑</span>  
+          <span class="subject-text">  
+            <strong>Maths / PC</strong>  
+            <small>Sciences fondamentales</small>  
+          </span>  
+          <span class="check">✓</span>  
+        </label>  
+
+        <label class="subject">  
+          <input type="checkbox" name="subjects"  
+            value="Robotique & IA">  
+          <span class="subject-icon">⌘</span>  
+          <span class="subject-text">  
+            <strong>Robotique &amp; IA</strong>  
+            <small>Robots et intelligence artificielle</small>  
+          </span>  
+          <span class="check">✓</span>  
+        </label>  
+
+        <label class="subject">  
+          <input type="checkbox" name="subjects"  
+            value="Data science & IA">  
+          <span class="subject-icon">▥</span>  
+          <span class="subject-text">  
+            <strong>Data science &amp; IA</strong>  
+            <small>Données et intelligence artificielle</small>  
+          </span>  
+          <span class="check">✓</span>  
+        </label>  
+
+        <label class="subject">  
+          <input type="checkbox" name="subjects"  
+            value="Programmation">  
+          <span class="subject-icon">{ }</span>  
+          <span class="subject-text">  
+            <strong>Programmation</strong>  
+            <small>Créer avec le code</small>  
+          </span>  
+          <span class="check">✓</span>  
+        </label>  
+
+        <label class="subject">
+  <input
+    type="checkbox"
+    name="subjects"
+    value="Cybersécurité"
+  >
+  <span class="subject-icon">⌑</span>
+  <span class="subject-text">
+    <strong>Cybersécurité</strong>
+    <small>Sécurité informatique et protection des données</small>
+  </span>
+  <span class="check">✓</span>
+        </label>
+
+      </div>  
+
+      <p id="subjectsError" class="error" aria-live="polite"></p>  
+    </fieldset>  
+
+    <fieldset>  
+      <legend><span>03</span> Coordonnées</legend>  
+
+      <div class="field">  
+        <label for="email">Adresse e-mail <b>*</b></label>  
+        <input  
+          type="email"  
+          id="email"  
+          name="email"  
+          placeholder="toi@exemple.com"  
+          autocomplete="email"  
+          required  
+        >  
+      </div>  
+
+      <div class="field">  
+        <label for="phone">Contact téléphonique <b>*</b></label>  
+        <input  
+          type="tel"  
+          id="phone"  
+          name="phone"  
+          placeholder="Ex. : +261 34 00 000 00"  
+          autocomplete="tel"  
+          maxlength="30"  
+          required  
+        >  
+        <small class="hint">  
+          N'oublie pas l'indicatif du pays.  
+        </small>  
+      </div>  
+    </fieldset>  
+
+    <fieldset>  
+      <legend><span>04</span> Remarque</legend>  
+
+      <div class="field">  
+        <label for="remark">  
+          Un mot pour nous ?  
+          <span class="optional">(facultatif)</span>  
+        </label>  
+
+        <textarea  
+          id="remark"  
+          name="remark"  
+          rows="4"  
+          maxlength="500"  
+          placeholder="Tes motivations, tes idées ou tes questions..."  
+        ></textarea>  
+
+        <div class="counter">  
+          <span>Partage ce que tu souhaites.</span>  
+          <span id="charCount">0 / 500</span>  
+        </div>  
+      </div>  
+    </fieldset>  
+
+    <label class="consent">  
+      <input type="checkbox" id="consent" required>  
+      <span>  
+        Je confirme que les informations fournies sont exactes  
+        et j'accepte leur utilisation pour traiter ma demande  
+        d'inscription. <b>*</b>  
+      </span>  
+    </label>  
+
+    <button type="submit" class="submit-btn">  
+      <span>Envoyer ma préinscription</span>  
+      <span class="arrow">→</span>  
+    </button>  
+
+    <p class="privacy">  
+      ◇ Tes informations doivent rester confidentielles.  
+    </p>  
+
+  </form>  
+
+  <div id="successMessage" class="success" hidden>  
+    <div class="success-icon">✓</div>  
+    <h2>Inscription réussie !</h2>
+
+<p>  
+  Ta préinscription a été enregistrée avec succès.  
+  Bienvenue chez EXPLORIUM !  
+</p>  
+        <button type="button" id="editButton" class="edit-btn">  
+          Revenir au formulaire  
+        </button>  
+      </div>  </section>  
+
+<footer>  
+  <span>© <span id="year"></span> EXPLORIUM</span>  
+  <span>La curiosité ouvre des possibilités.</span>  
+</footer>
+
+  </main>    <script type="module" src="script.js"></script>  </body>  
+</html>  

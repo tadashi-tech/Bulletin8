@@ -1289,4 +1289,450 @@ footer {
 .ambition-card h3,
 .value-item h3,
 .activity-item h3,
-.regulat
+.regulation-item h3 {
+    margin: 0 0 8px;
+    font: 700 16px 'Space Grotesk', sans-serif;
+}
+
+.ambition-card p,
+.value-item p,
+.activity-item p,
+.regulation-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* VALEURS */
+
+.values-section {
+    padding: 65px 0;
+    background: #eaf5ff;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.values-section .container {
+    max-width: 900px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+
+.value-item {
+    padding: 20px 15px;
+    border-radius: 13px;
+    background: white;
+}
+
+.value-item > span {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--accent-light);
+    font: 700 25px 'Space Grotesk', sans-serif;
+}
+
+
+/* ACTIVITES */
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 13px;
+    background: white;
+}
+
+.activity-number {
+    width: 37px;
+    height: 37px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: var(--accent-pale);
+    color: var(--accent);
+    font: 700 12px 'Space Grotesk', sans-serif;
+}
+
+
+/* REGLEMENT */
+
+.regulation-section {
+    max-width: 100%;
+    background: #f7faff;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.regulation-section > .container {
+    max-width: 900px;
+}
+
+.regulation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.regulation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid var(--line);
+    border-radius: 13px;
+    background: white;
+}
+
+.regulation-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: var(--accent-pale);
+    color: var(--accent);
+    font: 700 12px 'Space Grotesk', sans-serif;
+}
+
+
+/* ENGAGEMENT */
+
+.commitment-section {
+    padding: 75px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #e7f5ff, #ffffff);
+}
+
+.commitment-content {
+    max-width: 700px;
+}
+
+.commitment-content h2 {
+    margin: 17px 0;
+    font-size: clamp(27px, 4vw, 40px);
+}
+
+.commitment-content h2 span {
+    display: block;
+    color: var(--accent);
+}
+
+.commitment-content p {
+    max-width: 540px;
+    margin: 0 auto 25px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .rules-section {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .ambition-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rules-card {
+        padding: 20px;
+    }
+
+    .activity-item,
+    .regulation-item {
+        padding: 15px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================
+   MATIERES — CATALOGUE EXPLORIUM
+========================================== */
+
+.subjects-hero {
+    max-width: 850px;
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+
+.subjects-hero h1 {
+    max-width: 780px;
+}
+
+.subjects-counter {
+    display: flex;
+    gap: 35px;
+    margin-top: 35px;
+}
+
+.subjects-counter div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.subjects-counter strong {
+    color: var(--accent);
+    font: 700 27px 'Space Grotesk', sans-serif;
+}
+
+.subjects-counter span {
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* CATALOGUE */
+
+.subject-catalog {
+    max-width: 1050px;
+    padding-bottom: 75px;
+}
+
+.subject-catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+
+.catalog-card {
+    min-height: 305px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--line);
+    border-radius: 17px;
+    background: white;
+    color: var(--text);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.catalog-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px #123d6815;
+}
+
+.catalog-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-number {
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.catalog-arrow {
+    color: var(--accent);
+    font-size: 22px;
+    transition: .2s;
+}
+
+.catalog-card:hover .catalog-arrow {
+    transform: translate(4px, -4px);
+}
+
+.catalog-icon {
+    width: 51px;
+    height: 51px;
+    display: grid;
+    place-items: center;
+    margin: 24px 0 16px;
+    border-radius: 13px;
+    background: var(--accent-pale);
+    color: var(--accent);
+    font: 700 23px 'Space Grotesk', sans-serif;
+}
+
+.catalog-card h3 {
+    margin: 0 0 10px;
+    font: 700 20px 'Space Grotesk', sans-serif;
+}
+
+.catalog-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.catalog-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 17px;
+}
+
+.catalog-tags span {
+    padding: 6px 9px;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    background: var(--input);
+    color: var(--muted);
+    font-size: 9px;
+}
+
+.catalog-link {
+    margin-top: auto;
+    padding-top: 22px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* COULEURS DES CINQ DOMAINES */
+
+.maths-card:hover {
+    border-color: #3b82f6;
+}
+
+.maths-card .catalog-icon {
+    background: #eaf2ff;
+    color: #3b82f6;
+}
+
+.programming-card:hover {
+    border-color: #22a06b;
+}
+
+.programming-card .catalog-icon {
+    background: #e6f8ef;
+    color: #168653;
+}
+
+.robotics-card:hover {
+    border-color: #9875dc;
+}
+
+.robotics-card .catalog-icon {
+    background: #f1eaff;
+    color: #8054c9;
+}
+
+.data-card:hover {
+    border-color: #06a6bb;
+}
+
+.data-card .catalog-icon {
+    background: #e4f9fc;
+    color: #008da4;
+}
+
+.cyber-card:hover {
+    border-color: #df9b27;
+}
+
+.cyber-card .catalog-icon {
+    background: #fff4dc;
+    color: #b8790d;
+}
+
+
+/* SECTION FINALE */
+
+.subject-choice {
+    padding: 75px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #e7f5ff, #ffffff);
+    border-top: 1px solid var(--line);
+}
+
+.subject-choice-content {
+    max-width: 700px;
+}
+
+.subject-choice h2 {
+    margin: 17px 0;
+    font-size: clamp(27px, 4vw, 40px);
+}
+
+.subject-choice h2 span {
+    display: block;
+    color: var(--accent);
+}
+
+.subject-choice p {
+    max-width: 530px;
+    margin: 0 auto 25px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .subjects-hero {
+        padding-top: 30px;
+    }
+
+    .subject-catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalog-card {
+        min-height: 280px;
+    }
+
+    .subjects-counter {
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .subjects-counter strong {
+        font-size: 23px;
+    }
+
+    .subjects-counter span {
+        font-size: 8px;
+    }
+
+}

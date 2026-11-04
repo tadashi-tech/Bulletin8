@@ -93,4 +93,3 @@ code{padding:2px 5px;border:1px solid var(--line);border-radius:4px;background:v
 }
 @media(max-width:420px){.brand-name{font-size:12px}.brand-mark{width:38px;height:38px}.main-nav{gap:8px}.main-nav .nav-cta{font-size:10px}.hero-actions{align-items:flex-start;flex-direction:column;gap:16px}.orbit-one{width:290px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
-         
